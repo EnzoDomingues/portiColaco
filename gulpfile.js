@@ -3,8 +3,7 @@ var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var connect = require('gulp-connect');
 
-
-gulp.task('default',["sass","html","connect","watch"], function() {
+gulp.task('default',["html","sass","connect","watch"], function() {
 })
  
 gulp.task('sass', function () {
@@ -14,7 +13,7 @@ gulp.task('sass', function () {
 });
  
 gulp.task('watch', function () {
-  gulp.watch('./src/css/**/*.scss', ['sass']),
+  gulp.watch('./src/assets/styles/sass/**/*.scss', ['sass']),
   gulp.watch(['./src/html/**/*.html'], ['html']);
 });
  
@@ -30,5 +29,6 @@ gulp.task('html', function () {
     .pipe(gulp.dest('./dist/html'))
     .pipe(connect.reload());
 });
+
 
  
