@@ -1,0 +1,115 @@
+@import '../variables';
+
+html{
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  position: relative;
+  overflow: hidden;
+
+}
+
+
+
+.he-section{
+  background-image: url(../../../img/eu.png);
+  background-size: 80%;
+  background-color: #6223f0;
+  background-size: 219%;
+  background-position-x: 1%;
+  width: 100%;
+  flex: 1 0 auto;
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-repeat: no-repeat;
+
+  @media (min-width: $breakpoints-tablet) {
+    background-size: 178%;
+    background-position-x: -23%;
+  }  
+
+  &__title{
+    color: white;    
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+
+    @media (min-width: $breakpoints-tablet) {
+      font-size: 45px;
+      margin-bottom: 10rem;
+    }
+
+    @media (min-width: $breakpoints-desktop) {
+      font-size: 60px;
+    }
+  }
+
+  &__about{
+    width: 90%;
+
+    &__title{
+      color: #fff;
+      font-weight: normal;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 28px;
+      margin: 0;
+
+      @media (min-width: $breakpoints-tablet) {
+        font-size: 36px;
+      }
+      
+    }
+
+    &__title-2{
+      color: #fff;
+      margin: 0;
+      margin-top: 28px;
+      margin-bottom: 10px;
+      font-family: Arial, Helvetica, sans-serif;
+
+      @media (min-width: $breakpoints-tablet) {
+        font-size: 27px;
+      }
+      
+    }
+
+    &__text{
+      font-family: Arial, Helvetica, sans-serif;
+      color: #fff;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 13px;
+      line-height: 23px;
+
+      @media (min-width: $breakpoints-tablet) {
+        font-size: 21px;
+        margin-bottom: 37px;
+        line-height: 30px;
+      }
+    }
+
+    &__text:nth-child(5) {
+      margin-bottom: 7px;
+    }
+  }
+}
+

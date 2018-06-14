@@ -1,0 +1,98 @@
+@import '../variables';
+
+body{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .he-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $breakpoints-desktop) {
+      width: 97%;
+      flex-direction: row;
+      align-items: flex-start;
+  
+    }
+
+    &__title{
+      width: 100%;
+      height: 60vw;
+      display: flex;
+      align-items: flex-end;
+      background-color: #6223f0;
+
+      @media (min-width: $breakpoints-desktop) {
+        width: 35%;
+        margin-left: 4rem;
+        height: 48vw;
+        justify-content: center;
+      }
+      @media (min-width: $breakpoints-wide) {
+        height: 47vw;
+      }
+
+      &__sub{
+        margin: 0 20px 20px;
+        padding: 0;
+        color: #fff;
+        font-size: 30px;
+        font-family: 'arial';
+
+        @media (min-width: $breakpoints-desktop) {
+          font-size: 40px;
+        }
+        @media (min-width: $breakpoints-wide) {
+          font-size: 70px;
+        }
+      }
+
+    }
+  }
+
+  .he-projects{
+    width: 90%;
+    margin-top: 20px;
+
+    @media (min-width: $breakpoints-desktop) {
+      width: 63%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0;
+    }
+
+    @media (min-width: $breakpoints-wide) {
+      width: 59%;
+    }
+
+    &__deadpool{
+      width: 100%;
+      margin-bottom: 10px;
+
+      @media (min-width: $breakpoints-desktop) {
+        width: 42%;
+        margin: 0;
+      }
+
+      img{
+        width: 97%;
+        height: 92%;
+
+        @media (min-width: $breakpoints-wide) {
+          width: 98%;
+          height: 93%;
+        }
+      }
+     
+    }
+
+    &__deadpool:last-child{
+      margin: 0;
+    }
+
+  }
+}

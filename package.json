@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "gulp-file-include": "^2.0.1",
     "gulp-jquery": "^1.1.2",
     "gulp-uglify": "^3.0.0",
     "jquery": "^3.3.1",
