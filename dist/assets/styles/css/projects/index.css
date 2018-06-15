@@ -154,8 +154,8 @@ body {
     backface-visibility: hidden; }
     @media (min-width: 980px) {
       .he-header__nav {
-        height: 88%;
-        top: 6%; } }
+        height: 90%;
+        top: 5%; } }
     .he-header__nav__ul {
       list-style: none;
       text-align: center;
