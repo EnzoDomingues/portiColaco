@@ -1,32 +1,36 @@
+html {
+  height: 100%; }
+
 body {
-  width: 100%;
+  padding: 0;
   margin: 0;
-  padding: 0; }
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden; }
   body .he-section {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    height: 100%; }
     @media (min-width: 980px) {
       body .he-section {
-        width: 97%;
         flex-direction: row;
-        align-items: flex-start; } }
+        align-items: normal; } }
     body .he-section__title {
       width: 100%;
-      height: 60vw;
       display: flex;
       align-items: flex-end;
       background-color: #6223f0; }
       @media (min-width: 980px) {
         body .he-section__title {
           width: 35%;
-          margin-left: 4rem;
-          height: 48vw;
+          margin-left: 2rem;
           justify-content: center; } }
-      @media (min-width: 1300px) {
-        body .he-section__title {
-          height: 47vw; } }
       body .he-section__title__sub {
         margin: 0 20px 20px;
         padding: 0;
@@ -48,6 +52,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+        flex: 1 0 auto;
         margin: 0; } }
     @media (min-width: 1300px) {
       body .he-projects {
@@ -60,8 +65,8 @@ body {
           width: 42%;
           margin: 0; } }
       body .he-projects__deadpool img {
-        width: 97%;
-        height: 92%; }
+        width: 99%;
+        height: 94%; }
         @media (min-width: 1300px) {
           body .he-projects__deadpool img {
             width: 98%;

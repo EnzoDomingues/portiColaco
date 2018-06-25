@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "ajax": "0.0.4",
     "gulp-file-include": "^2.0.1",
     "gulp-jquery": "^1.1.2",
     "gulp-uglify": "^3.0.0",
@@ -11,6 +12,7 @@
     "sass-mq": "^5.0.0"
   },
   "devDependencies": {
+    "barba.js": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-connect": "^5.5.0",
     "gulp-sass": "^4.0.1",

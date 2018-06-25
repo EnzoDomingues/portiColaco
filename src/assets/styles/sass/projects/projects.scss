@@ -1,38 +1,44 @@
 @import '../variables';
 
+html{
+  height: 100%;
+}
+
+
 body{
-  width: 100%;
-  margin: 0;
   padding: 0;
+  margin: 0;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column; 
+  position: relative;
+  overflow: hidden;
+  
 
   .he-section{
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
 
     @media (min-width: $breakpoints-desktop) {
-      width: 97%;
       flex-direction: row;
-      align-items: flex-start;
-  
+      align-items: normal;
     }
 
     &__title{
       width: 100%;
-      height: 60vw;
       display: flex;
       align-items: flex-end;
       background-color: #6223f0;
 
       @media (min-width: $breakpoints-desktop) {
         width: 35%;
-        margin-left: 4rem;
-        height: 48vw;
+        margin-left: 2rem;
         justify-content: center;
-      }
-      @media (min-width: $breakpoints-wide) {
-        height: 47vw;
       }
 
       &__sub{
@@ -62,6 +68,7 @@ body{
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
+      flex: 1 0 auto;
       margin: 0;
     }
 
@@ -79,8 +86,9 @@ body{
       }
 
       img{
-        width: 97%;
-        height: 92%;
+        width: 99%;
+        height: 94%;
+    
 
         @media (min-width: $breakpoints-wide) {
           width: 98%;
